@@ -25,17 +25,66 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:src="@drawable/ico_mcdo"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/home_comment_marche"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ico_ble"
+            android:gravity="center"
+            android:text="Comment ça marche ?"
+            android:textAllCaps="true"
+            android:textColor="@color/big_white_text"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/home_promos"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ico_promos"
+            android:gravity="center"
+            android:text="Promos partenaires"
+            android:textAllCaps="true"
+            android:textColor="@color/big_white_text"
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/home_actualites"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ico_actu"
+            android:gravity="center"
+            android:text="Actualités locales"
+            android:textAllCaps="true"
+            android:textColor="@color/big_white_text"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/home_trouver_mcdo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ico_places"
+            android:gravity="center"
+            android:text="Trouver mon mc donald's"
+            android:textAllCaps="true"
+            android:textColor="@color/big_white_text"
+            android:textStyle="bold"/>
     </LinearLayout>
+
 </LinearLayout>
