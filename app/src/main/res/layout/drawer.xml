@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp">
+
+    <TextView
+        android:id="@+id/menu_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ico_menu_home"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/drawer_text_padding"
+        android:text="Accueil"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/menu_text"
+        android:textSize="@dimen/drawer_text_size"/>
+
+    <TextView
+        android:id="@+id/menu_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ico_menu_promosmcdo"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/drawer_text_padding"
+        android:text="Promos McDonald's"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/menu_text"
+        android:textSize="@dimen/drawer_text_size"/>
+
+    <TextView
+        android:id="@+id/menu_mesoffres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ico_menu_mesoffres"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/drawer_text_padding"
+        android:text="Mes offres personnelles"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/menu_text"
+        android:textSize="@dimen/drawer_text_size"/>
+
+    <TextView
+        android:id="@+id/menu_offres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ico_menu_offres"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/drawer_text_padding"
+        android:text="Offres partenaires"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/menu_text"
+        android:textSize="@dimen/drawer_text_size"/>
+
+    <TextView
+        android:id="@+id/menu_actualites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ico_menu_actu"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/drawer_text_padding"
+        android:text="Actualités locales"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/menu_text"
+        android:textSize="@dimen/drawer_text_size"/>
+
+    <TextView
+        android:id="@+id/menu_trouver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ico_menu_places"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/drawer_text_padding"
+        android:text="Trouver mon McDonald's"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/menu_text"
+        android:textSize="@dimen/drawer_text_size"/>
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:src="@android:color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" />
+
+    <TextView
+        android:id="@+id/menu_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ico_menu_ble"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/drawer_text_padding"
+        android:text="Comment ça marche ?"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/menu_text"
+        android:textSize="@dimen/drawer_text_size"/>
+
+    <TextView
+        android:id="@+id/menu_suivez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ico_menu_facebook"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/drawer_text_padding"
+        android:text="Suivez-nous sur Facebook"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/menu_text"
+        android:textSize="@dimen/drawer_text_size"/>
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:src="@android:color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" />
+
+    <TextView
+        android:id="@+id/menu_apropos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ico_menu_info"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/drawer_text_padding"
+        android:text="À propos"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/menu_text"
+        android:textSize="@dimen/drawer_text_size"/>
+
+    <TextView
+        android:id="@+id/menu_mentions1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ico_menu_mentions"
+        android:drawablePadding="@dimen/drawer_icon_padding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/drawer_text_padding"
+        android:text="Mentions légales"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/menu_text"
+        android:textSize="@dimen/drawer_text_size"/>
+</LinearLayout>
