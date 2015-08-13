@@ -4,5 +4,6 @@
     <color name="big_green_dark">#0d2209</color>
     <color name="big_white_text">#FFFFFF</color>
     <color name="menu_text">#000000</color>
+    <color name="tuto_text">#666666</color>
 
 </resources>
