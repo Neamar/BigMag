@@ -19,7 +19,6 @@ public class HomeActivity extends BaseActivity {
             }
         });
 
-
         findViewById(R.id.home_promos).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,7 +27,6 @@ public class HomeActivity extends BaseActivity {
                 startActivity(i);
             }
         });
-
 
         findViewById(R.id.home_actualites).setOnClickListener(new View.OnClickListener() {
             @Override
