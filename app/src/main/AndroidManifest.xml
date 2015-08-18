@@ -24,6 +24,10 @@
         <activity
             android:name=".WebviewActivity"
             android:label="BigMag"></activity>
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="Trouver mon McDonald's"></activity>
     </application>
 
 </manifest>
