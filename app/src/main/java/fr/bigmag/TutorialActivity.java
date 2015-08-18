@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.view.Menu;
 
 import fr.bigmag.fragment.TutorialSlideFragment;
 
@@ -16,8 +17,7 @@ public class TutorialActivity extends SlideActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tutorial);
+        super.onCreate(savedInstanceState, R.layout.activity_tutorial);
 
         initPager(new ScreenSlidePagerAdapter(getSupportFragmentManager()));
     }
@@ -41,5 +41,12 @@ public class TutorialActivity extends SlideActivity {
         public int getCount() {
             return NUM_PAGES;
         }
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // No menu on this activity
+        return true;
     }
 }

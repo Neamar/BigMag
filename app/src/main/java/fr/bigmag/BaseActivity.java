@@ -166,7 +166,7 @@ public class BaseActivity extends AppCompatActivity {
         if (mDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
-        
+
         if(item.getItemId() == R.id.action_comment) {
             Intent intent = new Intent(BaseActivity.this, TutorialActivity.class);
             startActivity(intent);
