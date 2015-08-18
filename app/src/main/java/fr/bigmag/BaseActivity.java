@@ -2,6 +2,7 @@ package fr.bigmag;
 
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -63,6 +64,54 @@ public class BaseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BaseActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.menu_comment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.this, TutorialActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.menu_promo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.this, WebviewActivity.class);
+                intent.putExtra("url", "http://bigmag.numeria-communication.fr/category/promos-mc-do/");
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.menu_offres).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.this, WebviewActivity.class);
+                intent.putExtra("url", "http://bigmag.numeria-communication.fr/category/offres-partenaires/");
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.menu_actualites).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.this, WebviewActivity.class);
+                intent.putExtra("url", "http://bigmag.numeria-communication.fr/category/actualites/");
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.menu_suivez).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/bigmagmagazine?ref=hl"));
                 startActivity(intent);
             }
         });

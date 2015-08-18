@@ -20,6 +20,10 @@
         <activity
             android:name=".TutorialActivity"
             android:label="Comment ça fonctionne ?"></activity>
+
+        <activity
+            android:name=".WebviewActivity"
+            android:label="BigMag"></activity>
     </application>
 
 </manifest>
