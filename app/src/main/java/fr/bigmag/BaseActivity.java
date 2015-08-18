@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,6 +22,12 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState, int layoutId) {
         super.onCreate(savedInstanceState);
         setContentView(layoutId);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setLogo(getResources().getDrawable(R.drawable.logo_bigmag));
+        toolbar.setLogoDescription(toolbar.getTitle());
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         // BealderParameters.setDebugMod();
         // BealderParameters.startApp(this);

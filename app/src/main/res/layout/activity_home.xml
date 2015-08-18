@@ -7,98 +7,111 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/bg"
             android:gravity="center"
-            android:text="L'appli des bons plans &amp; partenaires de McDonald's"
-            android:textAllCaps="true"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/big_white_text"/>
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ico_mcdo"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
 
             <TextView
-                android:id="@+id/home_comment_marche"
-                android:layout_width="120dp"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableTop="@drawable/ico_ble"
                 android:gravity="center"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="Comment ça marche ?"
+                android:text="L'appli des bons plans &amp; partenaires de McDonald's"
                 android:textAllCaps="true"
-                android:textColor="@color/big_white_text"
-                android:textStyle="bold"/>
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/big_white_text"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ico_mcdo"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_comment_marche"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/ico_ble"
+                    android:gravity="center"
+                    android:text="Comment ça marche ?"
+                    android:textAllCaps="true"
+                    android:textColor="@color/big_white_text"
+                    android:textStyle="bold"/>
 
 
-            <TextView
-                android:id="@+id/home_promos"
-                android:layout_width="120dp"
+                <TextView
+                    android:id="@+id/home_promos"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/ico_promos"
+                    android:gravity="center"
+                    android:text="Promos partenaires"
+                    android:textAllCaps="true"
+                    android:textColor="@color/big_white_text"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableTop="@drawable/ico_promos"
-                android:gravity="center"
-                android:text="Promos partenaires"
-                android:textAllCaps="true"
-                android:background="?android:attr/selectableItemBackground"
-                android:textColor="@color/big_white_text"
-                android:textStyle="bold"/>
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/home_actualites"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/ico_actu"
+                    android:gravity="center"
+                    android:text="Actualités locales"
+                    android:textAllCaps="true"
+                    android:textColor="@color/big_white_text"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/home_trouver_mcdo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/ico_places"
+                    android:gravity="center"
+                    android:text="Trouver mon mc donald's"
+                    android:textAllCaps="true"
+                    android:textColor="@color/big_white_text"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/home_actualites"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/ico_actu"
-                android:background="?android:attr/selectableItemBackground"
-                android:gravity="center"
-                android:text="Actualités locales"
-                android:textAllCaps="true"
-                android:textColor="@color/big_white_text"
-                android:textStyle="bold"/>
-
-
-            <TextView
-                android:id="@+id/home_trouver_mcdo"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/ico_places"
-                android:gravity="center"
-                android:text="Trouver mon mc donald's"
-                android:background="?android:attr/selectableItemBackground"
-                android:textAllCaps="true"
-                android:textColor="@color/big_white_text"
-                android:textStyle="bold"/>
-        </LinearLayout>
-
-    </LinearLayout>
+    </RelativeLayout>
     <!-- The navigation drawer -->
     <include
         layout="@layout/drawer"/>
