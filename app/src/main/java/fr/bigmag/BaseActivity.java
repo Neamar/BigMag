@@ -115,6 +115,26 @@ public class BaseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        findViewById(R.id.menu_apropos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.this, WebviewActivity.class);
+                intent.putExtra("url", "http://bigmag.numeria-communication.fr/category/a-propos");
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.menu_mentions).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.this, WebviewActivity.class);
+                intent.putExtra("url", "http://bigmag.numeria-communication.fr/category/mentions-legales");
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

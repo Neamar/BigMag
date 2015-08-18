@@ -20,10 +20,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
-        android:src="@drawable/tuto_2"
+        android:src="@drawable/tuto_02"
         android:layout_gravity="center_horizontal"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textView3"/>
 
     <TextView
         android:layout_width="fill_parent"
