@@ -5,12 +5,9 @@
     android:layout_height="fill_parent"
     android:background="@drawable/bg">
 
-    <android.support.v7.widget.Toolbar
+    <include
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:minHeight="?attr/actionBarSize"/>
+        layout="@layout/toolbar"/>
 
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer_layout"

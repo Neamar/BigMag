@@ -27,8 +27,6 @@ public class BaseActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setLogo(getResources().getDrawable(R.drawable.logo_bigmag));
-        toolbar.setLogoDescription(toolbar.getTitle());
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         // BealderParameters.setDebugMod();
