@@ -86,6 +86,7 @@ public class MessagesActivity extends BaseActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 progress.dismiss();
+                listView.setEmptyView(findViewById(android.R.id.empty));
                 Toast.makeText(MessagesActivity.this, "Erreur lors de la récupération des promotions :(", Toast.LENGTH_LONG).show();
                 error.printStackTrace();
             }

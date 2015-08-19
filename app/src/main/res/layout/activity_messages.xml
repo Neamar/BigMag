@@ -30,7 +30,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:gravity="center"
-                android:textSize="19sp"
                 android:padding="10dp"
                 android:shadowColor="#FF000000"
                 android:shadowDx="1"
@@ -38,15 +37,30 @@
                 android:shadowRadius="4"
                 android:text="Mes offres personnelles"
                 android:textAllCaps="true"
-
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/big_white_text"/>
+
+                android:textColor="@color/big_white_text"
+                android:textSize="19sp"/>
 
             <ListView
                 android:id="@+id/listView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/textView4"/>
+
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:shadowColor="#FF000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="4"
+                android:text="Vous n'avez aucune offre disponible."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone"/>
         </RelativeLayout>
         <!-- The navigation drawer -->
         <include
