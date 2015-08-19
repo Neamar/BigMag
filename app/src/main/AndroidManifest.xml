@@ -51,6 +51,11 @@
             android:screenOrientation="portrait"></activity>
 
         <activity
+            android:name=".MessagesActivity"
+            android:label="Comment ça fonctionne ?"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
             android:name=".MapsActivity"
             android:label="Trouver mon McDonald's"
             android:screenOrientation="portrait"></activity>

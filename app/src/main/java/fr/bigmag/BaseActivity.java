@@ -77,6 +77,15 @@ public class BaseActivity extends AppCompatActivity {
         });
 
 
+        findViewById(R.id.menu_mesoffres).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.this, MessagesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         findViewById(R.id.menu_comment).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +93,6 @@ public class BaseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
         findViewById(R.id.menu_promo).setOnClickListener(new View.OnClickListener() {
             @Override

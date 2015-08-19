@@ -45,7 +45,7 @@ public class MapsActivity extends BaseActivity {
         StringRequest messagesRequest = new StringRequest(Request.Method.GET, "https://api.bealder.com/v2/region", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.ico_menu_promosmcdo);
+                BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.pin);
 
                 try {
 
@@ -57,7 +57,7 @@ public class MapsActivity extends BaseActivity {
 
                         MarkerOptions marker = new MarkerOptions();
                         marker.position(new LatLng(mcdonald.getDouble("latitude"), mcdonald.getDouble("longitude")));
-                        marker.title(mcdonald.optString("description", ""));
+                        marker.title(mcdonald.optString("name", ""));
                         marker.icon(icon);
 
                         markers.add(marker);
