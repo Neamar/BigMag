@@ -11,7 +11,6 @@ public class Message {
     public String promotion;
 
     public Message(JSONObject json) {
-        Log.e("WTF", json.toString());
         try {
             this.id = json.getInt("id");
             this.name = json.getString("title");
