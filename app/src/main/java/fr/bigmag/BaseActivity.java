@@ -143,6 +143,16 @@ public class BaseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        findViewById(R.id.menu_trouver).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
