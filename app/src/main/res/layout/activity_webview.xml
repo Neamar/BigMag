@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@android:color/transparent"
         android:minHeight="?attr/actionBarSize"/>
 
     <android.support.v4.widget.DrawerLayout
@@ -18,8 +19,8 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".HomeActivity"
-        android:layout_below="@+id/toolbar">
+        android:layout_below="@+id/toolbar"
+        tools:context=".HomeActivity">
 
         <RelativeLayout
             android:layout_width="match_parent"
