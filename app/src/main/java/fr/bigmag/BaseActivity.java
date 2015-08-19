@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.bealder.sdk.manager.BealderParameters;
+
 
 public class BaseActivity extends AppCompatActivity {
     protected DrawerLayout mDrawerLayout;
@@ -30,7 +32,7 @@ public class BaseActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         // BealderParameters.setDebugMod();
-        // BealderParameters.startApp(this);
+        BealderParameters.startApp(this);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawer = findViewById(R.id.drawer);
@@ -183,4 +185,17 @@ public class BaseActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // - require -
+        BealderParameters.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // - require -
+        BealderParameters.onStop();
+    }
 }

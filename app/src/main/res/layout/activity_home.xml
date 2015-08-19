@@ -3,13 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@android:color/transparent"
         android:minHeight="?attr/actionBarSize"/>
 
     <android.support.v4.widget.DrawerLayout
@@ -17,14 +18,13 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".HomeActivity"
-        android:layout_below="@+id/toolbar">
+        android:layout_below="@+id/toolbar"
+        tools:context=".HomeActivity">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingBottom="@dimen/activity_vertical_margin"
@@ -37,13 +37,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:shadowColor="#FF000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="4"
                 android:text="L'appli des bons plans &amp; partenaires de McDonald's"
                 android:textAllCaps="true"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@color/big_white_text"/>
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/home_promos_mcdo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -61,6 +65,10 @@
                     android:background="?android:attr/selectableItemBackground"
                     android:drawableTop="@drawable/ico_ble"
                     android:gravity="center"
+                    android:shadowColor="#FF000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="4"
                     android:text="Comment ça marche ?"
                     android:textAllCaps="true"
                     android:textColor="@color/big_white_text"
@@ -74,6 +82,10 @@
                     android:background="?android:attr/selectableItemBackground"
                     android:drawableTop="@drawable/ico_promos"
                     android:gravity="center"
+                    android:shadowColor="#FF000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="4"
                     android:text="Promos partenaires"
                     android:textAllCaps="true"
                     android:textColor="@color/big_white_text"
@@ -93,6 +105,10 @@
                     android:background="?android:attr/selectableItemBackground"
                     android:drawableTop="@drawable/ico_actu"
                     android:gravity="center"
+                    android:shadowColor="#FF000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="4"
                     android:text="Actualités locales"
                     android:textAllCaps="true"
                     android:textColor="@color/big_white_text"
@@ -106,6 +122,10 @@
                     android:background="?android:attr/selectableItemBackground"
                     android:drawableTop="@drawable/ico_places"
                     android:gravity="center"
+                    android:shadowColor="#FF000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="4"
                     android:text="Trouver mon mc donald's"
                     android:textAllCaps="true"
                     android:textColor="@color/big_white_text"

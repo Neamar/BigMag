@@ -24,4 +24,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:support-v4:22.2.1'
     compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'com.mcxiaoke.volley:library:1.0.11'
+    compile 'org.altbeacon:android-beacon-library:2.1.3'
+    compile project(':bealderSdk')
 }
