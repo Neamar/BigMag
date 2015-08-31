@@ -3,6 +3,7 @@ package fr.bigmag;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -69,7 +70,6 @@ public class MessagesActivity extends BaseActivity {
 
                 try {
                     JSONArray jsonVenues = new JSONArray(response);
-
                     for (int i = 0; i < jsonVenues.length(); i++) {
                         venues.add(new Message(jsonVenues.getJSONObject(i)));
                     }

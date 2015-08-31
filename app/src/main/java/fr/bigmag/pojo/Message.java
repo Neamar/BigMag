@@ -22,6 +22,6 @@ public class Message {
     }
 
     public String getUrl() {
-        return "http://jed.api.bealder.com/v2/app/history/" + this.id;
+        return "https://api.bealder.com/v2/app/history/" + this.id;
     }
 }

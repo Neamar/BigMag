@@ -8,6 +8,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,9 +29,6 @@ public class BaseActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-
-        // BealderParameters.setDebugMod();
-        BealderParameters.startApp(this);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawer = findViewById(R.id.drawer);
@@ -137,7 +135,7 @@ public class BaseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BaseActivity.this, WebviewActivity.class);
-                intent.putExtra("url", "http://bigmag.numeria-communication.fr/category/a-propos");
+                intent.putExtra("url", "http://bigmag.numeria-communication.fr/a-propos/");
                 startActivity(intent);
             }
         });
@@ -147,7 +145,7 @@ public class BaseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BaseActivity.this, WebviewActivity.class);
-                intent.putExtra("url", "http://bigmag.numeria-communication.fr/category/mentions-legales");
+                intent.putExtra("url", "http://bigmag.numeria-communication.fr/mentions-legales/");
                 startActivity(intent);
             }
         });

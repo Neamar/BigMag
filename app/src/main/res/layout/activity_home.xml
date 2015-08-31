@@ -120,7 +120,7 @@
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="4"
-                    android:text="Trouver mon mc donald's"
+                    android:text="Trouver mon mcdonald&apos;s"
                     android:textAllCaps="true"
                     android:textColor="@color/big_white_text"
                     android:textStyle="bold"/>

@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.bealder.sdk.manager.BealderParameters;
+
 import fr.bigmag.fragment.TutorialSlideFragment;
 
 

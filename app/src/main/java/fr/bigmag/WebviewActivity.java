@@ -1,5 +1,6 @@
 package fr.bigmag;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
@@ -13,6 +14,8 @@ public class WebviewActivity extends BaseActivity {
         super.onCreate(savedInstanceState, R.layout.activity_webview);
 
         WebView webView = (WebView) findViewById(R.id.webView);
+        webView.setBackgroundColor(Color.TRANSPARENT);
+        webView.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
         final View loader = findViewById(R.id.loader);
 
         String url = getIntent().getStringExtra("url");
