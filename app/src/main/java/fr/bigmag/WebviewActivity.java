@@ -16,11 +16,14 @@ public class WebviewActivity extends BaseActivity {
 
         WebView webView = (WebView) findViewById(R.id.webView);
         webView.setBackgroundColor(Color.TRANSPARENT);
-        webView.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
+
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            webView.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
+        }
         final View loader = findViewById(R.id.loader);
 
         String url;
-        if(getIntent().hasExtra("url'")) {
+        if(getIntent().hasExtra("url")) {
             url = getIntent().getStringExtra("url");
         }
         else {
