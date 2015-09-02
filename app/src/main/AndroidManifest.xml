@@ -64,7 +64,7 @@
                 <category android:name="fr.bigmag" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.parse.ParsePushBroadcastReceiver" android:exported="false">
+        <receiver android:name=".CustomReceiver" android:exported="false">
             <intent-filter>
                 <action android:name="com.parse.push.intent.RECEIVE" />
                 <action android:name="com.parse.push.intent.DELETE" />
@@ -115,8 +115,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD6QM5dUvz9sL1ZwAa0swViBHSPciq3tAw"/>
-
-        <meta-data android:name="com.parse.push.notification_icon" android:resource="@drawable/ic_launcher"/>
     </application>
 
 </manifest>
