@@ -1,6 +1,7 @@
 package fr.bigmag;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
@@ -18,7 +19,14 @@ public class WebviewActivity extends BaseActivity {
         webView.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
         final View loader = findViewById(R.id.loader);
 
-        String url = getIntent().getStringExtra("url");
+        String url;
+        if(getIntent().hasExtra("url'")) {
+            url = getIntent().getStringExtra("url");
+        }
+        else {
+            // Started from the browser / or a notification
+            url = getIntent().getData().toString();
+        }
         url += "?device_id=" + getAndroidId();
         webView.loadUrl(url);
 
